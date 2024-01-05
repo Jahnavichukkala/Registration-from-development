@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Add padding and center the container */
+    .container {
+      padding: 20px;
+      margin: 0 auto;
+      width: 50%;
+    }
+
+    /* Set a style for the form title */
+    h1 {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      color: #04AA6D;
+    }
+
+    /* Set a style for the input fields */
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    /* Set a style for the labels */
+    label {
+      display: block;
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Set a style for the submit button */
+    button {
+      width: 100%;
+      padding: 15px;
+      margin: 10px 0;
+      border: none;
+      background-color: #04AA6D;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    /* Change the button color on hover */
+    button:hover {
+      background-color: #02a85a;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Registration Form</h1>
+    <form action="action_page.php" method="post">
+      <label for="first_name">First Name</label>
+      <input type="text" id="first_name" name="first_name" placeholder="Enter your first name" required>
+
+      <label for="last_name">Last Name</label>
+      <input type="text" id="last_name" name="last_name" placeholder="Enter your last name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+      <label for="gender">Gender</label>
+      <select id="gender" name="gender" required>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+</body>
+</html>
